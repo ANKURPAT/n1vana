@@ -33,3 +33,21 @@ Stores a memory entry.
   "content": "text to store"
 }
 ```
+### `n1vana.search`
+Retrieves relevant past memories.
+**Input**
+```json
+{  "agent_id": "default",  "query": "search text",  "limit": 5}
+```
+
+### Setup
+1. Install dependencies
+`pip install mcp faiss-cpu numpy sqlite-utils`
+2. Run the server
+```sh
+mkdir -p data
+python src/server.py
+```
+
+### License
+MIT
